@@ -63,7 +63,7 @@ class ResultCollection extends AbstractResult implements \IteratorAggregate, \Co
         return count($this->results) === 0;
     }
 
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new \ArrayIterator($this->results);
     }
