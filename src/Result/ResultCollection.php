@@ -68,7 +68,7 @@ class ResultCollection extends AbstractResult implements \IteratorAggregate, \Co
         return new \ArrayIterator($this->results);
     }
 
-    public function count()
+    public function count(): int
     {
         return count($this->results);
     }
